@@ -1,0 +1,17 @@
+
+#include "stdafx.h"
+#include<iostream>
+#include "conio.h"
+#include "stdlib.h"
+#include "stdio.h"
+using namespace std;
+
+
+void main ()
+{ int a,b,suma ; 
+	cin>>a;
+	cin>>b;
+	suma=a+b;
+	cout<<suma;
+	getch();
+}
