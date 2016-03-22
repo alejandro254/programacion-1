@@ -1,0 +1,66 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main()
+{
+	float Peso, CostoEnvio;
+	cout << "Ingrese el peso de la carta: ";
+	cin >> Peso;
+	if (Peso<0)
+		{
+			cout << "Valor invalido";
+	    }
+	else
+		{
+			if (Peso<=50)
+			{
+				CostoEnvio=1.50;
+			}
+		
+			else
+			{
+				if (Peso<=100)
+				{
+					CostoEnvio=4.00;
+				}
+			
+				else
+				{
+					if (Peso<=200)
+					{
+						CostoEnvio=6.00;
+					}
+				
+					else
+					{
+						if (Peso<=350)
+						{
+							CostoEnvio=10.5;
+						}
+					
+						else
+						{
+							if (Peso<=500)
+							{
+								CostoEnvio=15.00;
+							}
+							else
+							{
+								cout<<"No se puede enviar como carta";
+							}
+						}
+					}
+				}
+			}
+	        if (Peso<=500)
+			{
+				cout<<"El costo de envio de la carta es: Bs "<<CostoEnvio;
+			}
+        }  
+	getch();
+}
+
+	
