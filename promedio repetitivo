@@ -1,0 +1,37 @@
+// asd
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "stdlib.h"
+
+using namespace std; 
+
+void main()
+{ int i;
+float nota1,nota2,notar,promedio,notap,nota3,notaf,m1,p,m2,notafinal,promediototal,s;
+char m;
+s=0;
+i=1;
+do
+{   cout<<"ingrese su nota del practico\n\n";
+	cin>>notap;
+	m1=notap*0.20;
+	cout<<"ingrese su nota del primer examen\n\n";
+	cin>>nota1;
+	cout<<"ingrese la nota del segundo examen\n\n";
+	cin>>nota2;
+	cout<<"ingrese su nota del tercer examen\n\n";
+	cin>>nota3;
+	p=((nota1+nota2+nota3)/3)*0.40;
+	cout<<"ingrese su nota final del examen\n\n";
+	cin>>notaf;
+	m2=notaf*0.4;
+	notafinal=m1+m2+p;
+	s=s+notaf;
+	cout<<"desea continuar";
+	cin>>m;
+	i++;
+} while(m!='N');
+cout<<"el promedio es; "<<s/(i-1);
+getch;
+} 
