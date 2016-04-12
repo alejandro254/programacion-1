@@ -1,0 +1,27 @@
+
+
+#include "stdafx.h"
+#include "conio.h" 
+#include <iostream>
+#include "stdio.h"
+
+using namespace std;
+
+
+void main()
+{
+int factorial,i,n;
+factorial=1;
+i=1;
+do {
+  cout<<"ingrese el numero";
+  cin>>n;
+}
+   while(n>0);
+
+   while(1<n);
+ factorial=factorial+1;
+ i++;
+   cout<<"el factorial sera igual a "<<factorial; 
+   getche();
+}
