@@ -1,0 +1,36 @@
+// q.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include "conio.h" 
+#include <iostream>
+
+
+using namespace std;
+
+float mont_gen(float n, float c);
+
+void main()
+{
+  int numempleados,i;
+  float numhoras,costhoras,total,totalpagado=0;
+  cout<<"ingrese la cantidad de empleados a calcular: " ;
+  cin>>numempleados;
+  for(i=1;i<=numempleados;i++)
+  {
+  cout<<"ingrese la cantidad de horas trabajadas: " ;
+  cin>>numhoras;
+  cout<<"ingrese el costo de horas: ";
+  cin>>costhoras;
+  total=mont_gen(numhoras,costhoras);
+  cout<<"el total generado por el trabajador es: "<< total << endl;
+  getch();
+  totalpagado=totalpagado+total;
+  }
+    cout<<"el total pagado fue "<<totalpagado;
+	getch();
+}
+float mont_gen(float n, float c)
+{
+ float t=n*c;
+ return t;
+ }
