@@ -1,0 +1,92 @@
+#include "stdafx.h"
+#include "conio.h"
+#include "stdlib.h"
+#include <iostream>
+#include "windows.h"
+using namespace std ;
+
+float area(float l); 
+void potencia(float x, int y, float &z);
+int mcd (int a, int b);
+
+void main ()
+{
+
+	int opcion,a,b,q; 
+	float A, l, x, z, p ;
+	system("color 3C");
+ do
+{ 
+	 cout<<"1.- area del cuadrado" ;
+	 cout<< "2.- potencia "; 
+	 cout<<" 3.- mcd de dos numeros";
+	 cout<<" 0.- salir "; 
+     cout<<"introdusca la opcion";
+	 cin>>opcion;
+
+	 switch (opcion) 
+	 {
+	 case 1:
+		 { cout<<"introdusca la medida de un lado del cuadrado";
+		 cin>>l ; 
+		 A = area *(l);
+		 cout<<" el area del cuadrado es: "<<a;
+		 break;
+		 }
+	 case 2:
+		 { cout<<"introdusca la base";
+		 cin>>x;
+		 cout<<"introdusca el exponente";
+		 cin>>y;
+		 potencia(x,y,p);
+		 cout<<"el resultado de la  potencia es: "<<p;
+		 break; 
+		 }
+	 case 3:
+		 { cout<< "indroduzca el primer numero";
+		   cin>>a; 
+		   cout<<"introdusca el segundo numero";
+		   cin>>b;
+		   q= mcd(a,b);
+		   cout<<"el resultado del mcd de los numeros es: " <<q;
+		   break;
+		 }
+	 case 0:
+		 { cout<<" salir" ;
+		 break ; 
+		 }
+	 } getch(); 
+	 while ( opcion != 0); 
+	 getch();
+ } 
+		 
+ float area(float l) ; 
+ { 
+	  float m ; 
+	  m= l* l ;
+	  return m ; 
+
+ }
+  
+  void potencia (float x,int y , float &z)
+}
+  z=1 
+	  for( int i=1 ; i <=y ; i++ )
+		  z= z*x; 
+  } 
+  int mcd(int a, int b )
+	  }int c ;
+	  while (a!= b) 
+	  {
+		  if(a>b) 
+			  a = a-b 
+		  else 
+		     b=b-a;
+	  } c=a 
+		  return c;
+		  
+ }
+
+
+
+ }
